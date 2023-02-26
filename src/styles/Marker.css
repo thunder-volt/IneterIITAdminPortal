@@ -1,0 +1,33 @@
+.marker {
+  background-image: url('../assets/images.png');
+  background-size: cover;
+  border-image-width: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup-content {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.marker-warehouse {
+  background-image: url('../assets/image_.jpeg');
+  background-size: cover;
+  border-image-width: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup-close-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0 3px 0 0;
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+  top: 9px;
+}

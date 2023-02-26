@@ -1,0 +1,167 @@
+.login-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../images/login-bg.jpg); */
+    flex-direction: column;
+}
+
+.login-title {
+    flex-direction: column;
+    color: #14213d;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.signup-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+}
+
+.login-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 363px;
+}
+
+.login-content input {
+    width: 350px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.signup-content input {
+    width: 350px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid white;
+    color: #000;
+}
+
+/* .login-btn {
+    width: 350px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #d59af4;
+} */
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #5ad1f3;
+    color: #5ad1f3;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border:hover {
+    color: #f78af5;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #f78af5;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+}
+
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+
+.login-btn.btn.draw-border {
+    width: 350px;
+    height: 50px;
+    color: #14213d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:375px) {
+    .login-content input {
+        width: 275px;
+    }
+
+    .login-btn.btn.draw-border {
+        width: 275px;
+    }
+
+    .signup-content input {
+        width: 275px;
+    }
+}
+
+.signup-link {
+
+    color: #191a1b;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+}
+
+.signup-link:hover {
+    transform: scale(1.05);
+    color: #000;
+}

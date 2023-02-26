@@ -1,0 +1,9 @@
+.sidebar {
+    position: relative;
+    /* border-right: 1px solid #efefef; */
+    -webkit-transition: width, left, right, 300ms;
+    transition: width, left, right, 300ms;
+    /* width: 150px;
+    min-width: 150px; */
+
+}
